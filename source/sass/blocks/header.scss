@@ -1,0 +1,30 @@
+.header {
+  padding: 30px 0;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header__icon {
+  width: 119px;
+  height: 23px;
+  fill: $color-default-white;
+}
+
+.header__phone {
+  display: inline-block;
+  vertical-align: baseline;
+  font-family: $ff-alumni-sans;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+}
