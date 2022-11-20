@@ -933,6 +933,7 @@ button,
 }
 
 .info__button {
+  display: block;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -968,9 +969,10 @@ button,
   background-color: rgba(20, 54, 122, 0.5);
 }
 
-.info__button:disabled {
-  opacity: 0.8;
+.is-disabled {
+  opacity: 0.3;
   pointer-events: none;
+  cursor: not-allowed;
 }
 
 /* @mixin hover-focus {

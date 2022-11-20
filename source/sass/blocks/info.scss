@@ -105,6 +105,7 @@
 }
 
 .info__button {
+  display: block;
   grid-column: 2/3;
   align-self: start;
   justify-self: end;
@@ -143,9 +144,10 @@
   @include active {
     background-color: $color-dark-cerulean-opacity;
   }
+}
 
-  &:disabled {
-    opacity: 0.8;
-    pointer-events: none;
-  }
+.is-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: not-allowed;
 }
