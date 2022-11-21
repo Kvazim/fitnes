@@ -1,0 +1,43 @@
+.video {
+  display: block;
+  position: absolute;
+  bottom: -35%;
+  left: 40%;
+}
+
+.video__img {
+  max-width: 364px;
+}
+
+.video__button {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  border: none;
+  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 15px solid transparent;
+    border-image: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);
+    border-image-slice: 1;
+  }
+}
+
+
+// background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%); кнопка центр
+// border-image: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%);

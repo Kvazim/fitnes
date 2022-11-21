@@ -12,8 +12,7 @@
   }
 
   @include vp-767 {
-    width: 100%;
-    margin: 0 auto;
+    min-width: 100%;
     gap: 0;
   }
 }
