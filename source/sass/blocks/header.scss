@@ -57,6 +57,7 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: $color-default-white;
+  z-index: 1;
 
   @include vp-1200 {
     font-size: 24px;
