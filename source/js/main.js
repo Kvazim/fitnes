@@ -1,5 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {createVideo} from './modules/video/video';
+
+const DATA = {
+  DATA_CONTAINER: '[data-video]',
+  VIDEO_URL: 'https://www.youtube.com/watch?v=9TZXsZItgdw',
+};
 
 // ---------------------------------
 
@@ -11,6 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+
+  createVideo(DATA);
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
