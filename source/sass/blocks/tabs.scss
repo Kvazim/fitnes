@@ -6,6 +6,10 @@
   margin-bottom: 39px;
   padding: 0;
 
+  @include vp-1200 {
+    margin-bottom: 45px;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -33,6 +37,16 @@
   font-weight: 400;
   line-height: 30px;
   color: rgba(16, 38, 84, 0.5);
+
+  @include vp-1200 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .tabs__link.is-active {

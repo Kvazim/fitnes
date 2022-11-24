@@ -1,10 +1,10 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {createVideo} from './modules/video/video';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { createVideo } from './modules/video/video';
 
 const DATA = {
   DATA_CONTAINER: '[data-video]',
-  VIDEO_URL: 'https://www.youtube.com/watch?v=9TZXsZItgdw',
+  VIDEO_URL: 'https://www.youtube.com/embed/9TZXsZItgdw',
 };
 
 // ---------------------------------
