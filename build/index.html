@@ -59,7 +59,7 @@
               <h2 class="info__title">Фитнес<br>центр</h2>
             </div>
             <!--Для отключния ссылок добавлять клас is-disabled-->
-            <a class="info__button" href="#subscription">купить абонемент</a>
+            <a class="info__button" href="#subscription" data-scroll>купить абонемент</a>
           </div>
           <picture>
             <source type="image/webp" srcset="./img/contents/superman.webp 1x, ./img/contents/superman@2x.webp 2x">
@@ -104,17 +104,17 @@
           </div>
         </div>
       </section>
-      <section class="subscription">
+      <section class="subscription" id="subscription">
         <div class="container">
           <h2 class="visually-hidden">Купить абонимент</h2>
           <h3 class="subscription__title">Абонементы</h3>
-          <ul class="subscription__list tabs">
-            <li class="tabs__item"><a class="tabs__link is-active" href="#">1 месяц</a></li>
-            <li class="tabs__item"><a class="tabs__link" href="#">6 месяцев</a></li>
-            <li class="tabs__item"><a class="tabs__link" href="#">12 месяцев</a></li>
+          <ul class="subscription__list tabs" data-tabs>
+            <li class="tabs__item"><a class="tabs__link is-active" href="#" data-tabs-link="1-month">1 месяц</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="#" data-tabs-link="6-month">6 месяцев</a></li>
+            <li class="tabs__item"><a class="tabs__link" href="#" data-tabs-link="12-month">12 месяцев</a></li>
           </ul>
           <ul class="subscription__content">
-            <li class="subscription__item cards is-open">
+            <li class="subscription__item cards is-open" data-tabs-content="1-month">
               <ul class="cards__list">
                 <li class="cards__item">
                   <h3 class="cards__title">С тренером</h3>
@@ -157,7 +157,7 @@
                 </li>
               </ul>
             </li>
-            <li class="subscription__item cards">
+            <li class="subscription__item cards" data-tabs-content="6-month">
               <ul class="cards__list">
                 <li class="cards__item">
                   <h3 class="cards__title">С тренером</h3>
@@ -172,7 +172,7 @@
                   </div>
                   <a class="cards__button" href="#">купить абонемент</a>
                 </li>
-                <li class="cards__item">>
+                <li class="cards__item">
                   <h3 class="cards__title">Дневной</h3>
                   <p class="cards__subtitle">с 8:00 до 17:00</p>
                   <div class="cards__price price">
@@ -200,7 +200,7 @@
                 </li>
               </ul>
             </li>
-            <li class="subscription__item cards">
+            <li class="subscription__item cards" data-tabs-content="12-month">
               <ul class="cards__list">
                 <li class="cards__item">
                   <h3 class="cards__title">С тренером</h3>
@@ -215,7 +215,7 @@
                   </div>
                   <a class="cards__button" href="#">купить абонемент</a>
                 </li>
-                <li class="cards__item">>
+                <li class="cards__item">
                   <h3 class="cards__title">Дневной</h3>
                   <p class="cards__subtitle">с 8:00 до 17:00</p>
                   <div class="cards__price price">

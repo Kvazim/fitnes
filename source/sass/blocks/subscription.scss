@@ -1,6 +1,6 @@
 .subscription {
   padding: 120px 0;
-  background-color: #F8F9FC;
+  background-color: $color-ghost-white;
 
   @include vp-1200 {
     padding: 100px 0;
@@ -14,7 +14,6 @@
 .subscription .container {
   position: relative;
   text-align: center;
-  overflow-x: clip;
 
   @include vp-1200 {
     padding: 0 163px;
@@ -76,167 +75,4 @@
   @include vp-767 {
     display: none;
   }
-}
-
-//----------------cards-----------//
-.cards {
-  display: none;
-  position: relative;
-  z-index: 1;
-}
-
-.cards.is-open {
-  display: block;
-}
-
-.cards__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 0;
-  padding: 0;
-  gap: 40px;
-
-  @include vp-1200 {
-    grid-template-columns: 1fr;
-  }
-}
-
-.cards__item {
-  padding: 68px 77px 68px;
-  border: 7px solid transparent;
-  border-image-source: none;
-  border-image-slice: 1;
-  list-style-type: none;
-  background-color: $color-default-white;
-
-  @include vp-1200 {
-    padding: 68px 118px;
-  }
-
-  @include vp-767 {
-    padding: 55px 42px;
-  }
-
-  @include hover {
-    border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
-
-    .cards__button {
-      border: none;
-      outline: none;
-      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-      color: $color-default-white;
-    }
-  }
-
-  &:focus-within {
-    border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
-
-    .cards__button {
-      border: none;
-      outline: none;
-      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-      color: $color-default-white;
-    }
-  }
-}
-
-.cards__title {
-  margin: 0;
-  margin-bottom: 22px;
-  padding: 0;
-  font-family: $ff-roboto-condensed;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 29px;
-
-  @include vp-767 {
-    margin-bottom: 20px;
-    font-size: 22px;
-    line-height: 24px;
-  }
-}
-
-.cards__subtitle {
-  margin: 0;
-  margin-bottom: 59px;
-  padding: 0;
-  font-family: $ff-roboto-condensed;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #495A7D;
-}
-
-.cards__button {
-  padding: 27px 44px 28px 45px;
-  outline: 2px solid $color-default-sapphire;
-  font-family: $ff-roboto-condensed;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  color: $color-default-sapphire;
-}
-
-//-----------------price----------------//
-
-.price {
-  display: block;
-  position: relative;
-  margin-bottom: 59px;
-}
-
-.price__background {
-  margin: 0;
-  padding: 0;
-  font-family: $ff-roboto-condensed;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 150px;
-  color: #E8E8E8;
-
-  @include vp-767 {
-    font-size: 80px;
-    line-height: 120px;
-  }
-}
-
-.price__content {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  column-gap: 14px;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  font-family: $ff-roboto-condensed;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #103AAE;
-
-  @include vp-767 {
-    font-size: 48px;
-    line-height: 72px;
-  }
-}
-
-.price__icon {
-  display: block;
-  width: 30px;
-  height: 42px;
-  align-self: center;
-  fill: $color-default-sapphire;
-
-  @include vp-767 {
-    width: 24px;
-    height: 33px;
-  }
-}
-
-//-----promo-----//
-
-.promo {
-  padding: 300px;
 }

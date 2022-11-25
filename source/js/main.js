@@ -1,11 +1,24 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { createVideo } from './modules/video/video';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {createVideo} from './modules/video/video';
+import {twistUp} from './modules/smooth-scroll/smooth-scroll';
+import {changeTabs} from './modules/tabs/tabs';
 
 const DATA = {
   DATA_CONTAINER: '[data-video]',
   VIDEO_URL: 'https://www.youtube.com/embed/9TZXsZItgdw',
+  SCROLL_ATRR: '[data-scroll]',
+  DATA_TABS: '[data-tabs]',
+  TABS_CLASS: 'tabs__link',
+  DATA_TABS_LINK: '[data-tabs-link]',
+  DATA_TABS_CONTENT: '[data-tabs-content]',
+  ACTIVE: 'is-active',
+  OPEN: 'is-open',
 };
+
+//
+
+const {DATA_CONTAINER, VIDEO_URL, SCROLL_ATRR, DATA_TABS, TABS_CLASS, DATA_TABS_LINK, DATA_TABS_CONTENT, ACTIVE, OPEN} = DATA;
 
 // ---------------------------------
 
@@ -18,7 +31,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
 
-  createVideo(DATA);
+  twistUp(SCROLL_ATRR);
+  createVideo(DATA_CONTAINER, VIDEO_URL);
+  changeTabs(DATA_TABS, DATA_TABS_LINK, TABS_CLASS, DATA_TABS_CONTENT, ACTIVE, OPEN);
 
   // ---------------------------------
 

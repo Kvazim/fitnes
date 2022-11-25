@@ -1,11 +1,11 @@
 .top-wrapper {
-  background: $main-gradient;
+  background: $venetian-red-to-dark-cerulean-conic-desktop;
 
   @include vp-1200 {
-    background: $main-gradient-tablet;
+    background: $venetian-red-to-dark-cerulean-conic-tablet;
   }
 
   @include vp-767 {
-    background: $main-gradient-mobile;
+    background: $venetian-red-to-dark-cerulean-conic-mobile;
   }
 }
