@@ -671,7 +671,7 @@ button,
 }
 
 .btn--red {
-  background-color: #ff1553;
+  background-color: #ed0233;
 }
 
 .btn:disabled {
@@ -933,7 +933,9 @@ button,
 }
 
 .info__button {
-  display: block;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 234px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -942,7 +944,7 @@ button,
   -ms-grid-column-align: end;
   justify-self: end;
   margin-top: 5px;
-  padding: 19px 55px 20px;
+  padding: 19px 0 20px;
   border: 4px solid #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
@@ -1125,11 +1127,11 @@ button,
 
 .subscription__image {
   display: block;
-  width: 321px;
-  height: 384px;
+  width: 466px;
+  height: 494px;
   position: absolute;
-  bottom: -240px;
-  right: -123px;
+  bottom: -270px;
+  right: -180px;
 }
 
 .tabs {
@@ -1141,7 +1143,7 @@ button,
   -moz-column-gap: 46px;
   column-gap: 46px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
   padding: 0;
 }
 
@@ -1165,7 +1167,8 @@ button,
   display: inline-block;
   position: relative;
   vertical-align: baseline;
-  padding: 20px 0;
+  padding: 12px 0;
+  padding-bottom: 13px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -1209,7 +1212,7 @@ button,
 }
 
 .cards__item {
-  padding: 68px 0 68px;
+  padding: 56px 0 62px;
   border: 7px solid transparent;
   border-image-source: none;
   border-image-slice: 1;
@@ -1231,7 +1234,7 @@ button,
 
 .cards__title {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
   padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
@@ -1241,7 +1244,7 @@ button,
 
 .cards__subtitle {
   margin: 0;
-  margin-bottom: 59px;
+  margin-bottom: 11px;
   padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
@@ -1251,20 +1254,25 @@ button,
 }
 
 .cards__button {
-  padding: 27px 44px 28px 45px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 204px;
+  padding: 23px;
+  padding-bottom: 25px;
   outline: 2px solid #102654;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 14px;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: #102654;
 }
 
 .price {
   display: block;
   position: relative;
-  margin-bottom: 59px;
+  margin-bottom: 30px;
 }
 
 .price__background {
@@ -1288,7 +1296,7 @@ button,
   column-gap: 14px;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 6px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1307,6 +1315,141 @@ button,
   -ms-grid-row-align: center;
   align-self: center;
   fill: #102654;
+}
+
+.promo {
+  padding-top: 120px;
+  padding-bottom: 106px;
+}
+
+.promo .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+}
+
+.promo__text {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 201px 95px;
+  grid-template-columns: 201px 95px;
+  -ms-grid-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  -ms-grid-rows: min-content min-content min-content;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content;
+  -webkit-column-gap: 52px;
+  -moz-column-gap: 52px;
+  column-gap: 52px;
+  row-gap: 7px;
+  padding: 80px 76px 85px 76px;
+  background-color: #ed0233;
+}
+
+.promo__title {
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 15px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 79px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.promo__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+.promo__wrapper dl {
+  margin: 0;
+  padding: 0;
+  justify-self: baseline;
+  color: #ffffff;
+}
+
+.promo__wrapper dt {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.promo__wrapper dt::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -3px;
+  background-color: #ffffff;
+}
+
+.promo__wrapper dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.promo__wrapper div {
+  margin-left: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.promo__wrapper p {
+  margin: 0;
+  padding: 0;
+}
+
+.promo__subtitle {
+  grid-column: 1/-1;
+  margin: 0;
+  margin-bottom: 39px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.promo__button {
+  grid-column: 1/-1;
+  display: block;
+  padding: 25px 0;
+  padding-bottom: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  min-height: 500px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
 }
 
 /* @mixin hover-focus {
@@ -1422,6 +1565,7 @@ button,
   }
 
   .info__button {
+    width: 187px;
     margin-top: 13px;
     padding-left: 31px;
     padding-right: 31px;
@@ -1429,6 +1573,7 @@ button,
 
   .about {
     padding-top: 100px;
+    padding-bottom: 183px;
   }
 
   .about .container {
@@ -1493,20 +1638,24 @@ button,
   }
 
   .subscription__title {
-    margin-bottom: 6px;
+    margin-left: -15px;
+    margin-bottom: 9px;
     font-size: 42px;
     line-height: 50px;
   }
 
   .subscription__image {
-    width: 289px;
-    height: 345px;
-    bottom: -200px;
-    right: -60px;
+    width: 423px;
+    height: 443px;
+    bottom: -224px;
+    right: -76px;
   }
 
   .tabs {
     margin-bottom: 45px;
+    -webkit-column-gap: 55px;
+    -moz-column-gap: 55px;
+    column-gap: 55px;
   }
 
   .tabs__link {
@@ -1517,10 +1666,68 @@ button,
   .cards__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 41px;
   }
 
   .cards__item {
-    padding: 68px 118px;
+    padding: 55px 112px 62px;
+  }
+
+  .promo {
+    padding: 100px 0;
+  }
+
+  .promo__text {
+    -ms-grid-columns: 117px 56px;
+    grid-template-columns: 117px 56px;
+    -webkit-column-gap: 29px;
+    -moz-column-gap: 29px;
+    column-gap: 29px;
+    row-gap: 0;
+    padding: 46px 45px;
+  }
+
+  .promo__title {
+    margin-left: 7px;
+    font-size: 48px;
+    line-height: 46px;
+  }
+
+  .promo__wrapper {
+    gap: 0;
+  }
+
+  .promo__wrapper dt {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .promo__wrapper dd {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .promo__wrapper div {
+    margin-left: 4px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .promo__subtitle {
+    margin-bottom: 29px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .promo__button {
+    padding: 12px 0;
+    border: 2px solid;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .promo__image {
+    min-height: 292px;
   }
 }
 
@@ -1601,6 +1808,7 @@ button,
 
   .info__button {
     grid-column: 1/-1;
+    width: 100%;
     margin-top: 22px;
     padding: 21px 20px 20px;
     -ms-grid-column-align: auto;
@@ -1667,7 +1875,7 @@ button,
   }
 
   .subscription {
-    padding: 70px 0;
+    padding: 64px 0 70px;
   }
 
   .subscription .container {
@@ -1675,7 +1883,8 @@ button,
   }
 
   .subscription__title {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-left: -10px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -1684,19 +1893,34 @@ button,
     display: none;
   }
 
+  .tabs {
+    margin-bottom: 34px;
+    -webkit-column-gap: 46px;
+    -moz-column-gap: 46px;
+    column-gap: 46px;
+  }
+
   .tabs__link {
     font-size: 16px;
     line-height: 24px;
   }
 
+  .cards__list {
+    gap: 35px;
+  }
+
   .cards__item {
-    padding: 55px 42px;
+    padding: 45px 35px 49px;
   }
 
   .cards__title {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size: 22px;
     line-height: 24px;
+  }
+
+  .price {
+    margin-bottom: 27px;
   }
 
   .price__background {
@@ -1712,6 +1936,19 @@ button,
   .price__icon {
     width: 24px;
     height: 33px;
+  }
+
+  .promo {
+    padding-top: 70px;
+  }
+
+  .promo .container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .promo__text {
+    padding: 45px 44px 52px;
   }
 }
 

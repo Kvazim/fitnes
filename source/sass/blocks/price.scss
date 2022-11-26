@@ -1,7 +1,11 @@
 .price {
   display: block;
   position: relative;
-  margin-bottom: 59px;
+  margin-bottom: 30px;
+
+  @include vp-767 {
+    margin-bottom: 27px;
+  }
 }
 
 .price__background {
@@ -26,7 +30,7 @@
   column-gap: 14px;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 6px;
   transform: translateX(-50%);
   font-family: $ff-roboto-condensed;
   font-size: 60px;

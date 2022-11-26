@@ -102,12 +102,14 @@
 }
 
 .info__button {
-  display: block;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 234px;
   grid-column: 2/3;
   align-self: start;
   justify-self: end;
   margin-top: 5px;
-  padding: 19px 55px 20px;
+  padding: 19px 0 20px;
   border: 4px solid $color-default-white;
   font-family: $ff-roboto-condensed;
   font-size: 12px;
@@ -120,6 +122,7 @@
   transition: all $trans-default;
 
   @include vp-1200 {
+    width: 187px;
     margin-top: 13px;
     padding-left: 31px;
     padding-right: 31px;
@@ -127,6 +130,7 @@
 
   @include vp-767 {
     grid-column: 1/-1;
+    width: 100%;
     margin-top: 22px;
     padding: 21px 20px 20px;
     justify-self: auto;
