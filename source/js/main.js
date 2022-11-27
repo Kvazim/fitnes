@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {createVideo} from './modules/video/video';
 import {twistUp} from './modules/smooth-scroll/smooth-scroll';
 import {changeTabs} from './modules/tabs/tabs';
-import './modules/slide/slide';
+// import './modules/slide/slide';
 
 const DATA = {
   DATA_CONTAINER: '[data-video]',
