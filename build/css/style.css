@@ -2352,7 +2352,6 @@ button,
 .trainer__item {
   display: block;
   position: relative;
-  max-width: 260px;
   list-style-type: none;
   cursor: pointer;
 }
@@ -2373,9 +2372,6 @@ button,
 }
 
 .trainer__item img {
-  width: 100%;
-  min-height: 294px;
-  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -2963,16 +2959,6 @@ button,
     line-height: 50px;
     text-align: center;
   }
-
-  .trainer__item {
-    max-width: 268px;
-    max-height: 294px;
-  }
-
-  .trainer__item img {
-    width: 268px;
-    height: 294px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -3209,12 +3195,6 @@ button,
     margin-bottom: 40px;
     font-size: 32px;
     line-height: 38px;
-  }
-
-  .trainer__item img {
-    width: 100%;
-    min-height: 274px;
-    height: 100%;
   }
 
   .trainer__button {
