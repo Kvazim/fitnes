@@ -1,9 +1,9 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {createVideo} from './modules/video/video';
-import {twistUp} from './modules/smooth-scroll/smooth-scroll';
-import {changeTabs} from './modules/tabs/tabs';
-// import './modules/slide/slide';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { initModals } from './modules/modals/init-modals';
+import { createVideo } from './modules/video/video';
+import { twistUp } from './modules/smooth-scroll/smooth-scroll';
+import { changeTabs } from './modules/tabs/tabs';
+import { scrollSlider } from './modules/slide/slide';
 
 const DATA = {
   DATA_CONTAINER: '[data-video]',
@@ -19,7 +19,7 @@ const DATA = {
 
 //
 
-const {DATA_CONTAINER, VIDEO_URL, SCROLL_ATRR, DATA_TABS, TABS_CLASS, DATA_TABS_LINK, DATA_TABS_CONTENT, ACTIVE, OPEN} = DATA;
+const { DATA_CONTAINER, VIDEO_URL, SCROLL_ATRR, DATA_TABS, TABS_CLASS, DATA_TABS_LINK, DATA_TABS_CONTENT, ACTIVE, OPEN } = DATA;
 
 // ---------------------------------
 
@@ -35,6 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
   twistUp(SCROLL_ATRR);
   createVideo(DATA_CONTAINER, VIDEO_URL);
   changeTabs(DATA_TABS, DATA_TABS_LINK, TABS_CLASS, DATA_TABS_CONTENT, ACTIVE, OPEN);
+  scrollSlider();
 
   // ---------------------------------
 

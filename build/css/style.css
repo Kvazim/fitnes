@@ -2324,6 +2324,10 @@ button,
   padding-bottom: 91px;
 }
 
+.trainer .container {
+  position: relative;
+}
+
 .trainer__title {
   margin: 0;
   margin-bottom: 48px;
@@ -2340,12 +2344,6 @@ button,
 }
 
 .trainer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
   margin: 0;
   padding: 0;
 }
@@ -2464,19 +2462,20 @@ button,
   align-items: center;
   position: absolute;
   width: 56px;
-  height: 100%;
-  top: 0;
+  height: 294px;
+  bottom: 0;
   border: none;
   cursor: pointer;
   background-color: transparent;
+  z-index: 10;
 }
 
-.trainer__button--prew {
-  left: -76px;
+.trainer__button--prev {
+  left: 0;
 }
 
 .trainer__button--next {
-  right: -76px;
+  right: 0;
 }
 
 .trainer__button.focus-visible:focus .trainer__icon {
@@ -2964,12 +2963,6 @@ button,
     text-align: center;
   }
 
-  .trainer__list {
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
-  }
-
   .trainer__item {
     max-width: 268px;
     max-height: 294px;
@@ -3227,12 +3220,12 @@ button,
     width: 32px;
   }
 
-  .trainer__button--prew {
-    left: -45px;
+  .trainer__button--prev {
+    left: 0;
   }
 
   .trainer__button--next {
-    right: -45px;
+    right: 0;
   }
 
   .trainer__icon {
