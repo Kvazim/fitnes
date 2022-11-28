@@ -3,7 +3,7 @@ import { initModals } from './modules/modals/init-modals';
 import { createVideo } from './modules/video/video';
 import { twistUp } from './modules/smooth-scroll/smooth-scroll';
 import { changeTabs } from './modules/tabs/tabs';
-import { scrollSlider } from './modules/slide/slide';
+import './modules/slide/slide';
 
 const DATA = {
   DATA_CONTAINER: '[data-video]',
@@ -35,7 +35,6 @@ window.addEventListener('DOMContentLoaded', () => {
   twistUp(SCROLL_ATRR);
   createVideo(DATA_CONTAINER, VIDEO_URL);
   changeTabs(DATA_TABS, DATA_TABS_LINK, TABS_CLASS, DATA_TABS_CONTENT, ACTIVE, OPEN);
-  scrollSlider();
 
   // ---------------------------------
 

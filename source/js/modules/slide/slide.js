@@ -4,7 +4,7 @@
 /* global swiper */
 
 const scrollSlider = (item) => {
-  return item;
+
 };
 
 const swiper = new Swiper('.trainer__wrapper', {
