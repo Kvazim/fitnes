@@ -1,11 +1,5 @@
 /* global Swiper */
 /* eslint no-undef: "error" */
-/* eslint no-unused-vars: ["error", { "vars": "local" }] */
-/* global swiper */
-
-const scrollSlider = (item) => {
-  return item;
-};
 
 const swiper = new Swiper('.trainer__wrapper', {
   direction: 'horizontal',
@@ -30,7 +24,3 @@ const swiper = new Swiper('.trainer__wrapper', {
     prevEl: '.trainer__button--prev',
   },
 });
-
-scrollSlider(swiper);
-
-// export { scrollSlider };
