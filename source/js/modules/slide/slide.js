@@ -24,3 +24,13 @@ const swiper = new Swiper('.trainer__wrapper', {
     prevEl: '.trainer__button--prev',
   },
 });
+
+const reviews = new Swiper('.reviews__wrapper', {
+  direction: 'horizontal',
+  loop: false,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
+});
