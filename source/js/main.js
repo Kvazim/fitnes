@@ -1,8 +1,8 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { createVideo } from './modules/video/video';
-import { twistUp } from './modules/smooth-scroll/smooth-scroll';
-import { changeTabs } from './modules/tabs/tabs';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {createVideo} from './modules/video/video';
+import {twistUp} from './modules/smooth-scroll/smooth-scroll';
+import {changeTabs} from './modules/tabs/tabs';
 import './modules/slide/slide';
 
 const DATA = {
@@ -19,7 +19,7 @@ const DATA = {
 
 //
 
-const { DATA_CONTAINER, VIDEO_URL, SCROLL_ATRR, DATA_TABS, TABS_CLASS, DATA_TABS_LINK, DATA_TABS_CONTENT, ACTIVE, OPEN } = DATA;
+const {DATA_CONTAINER, VIDEO_URL, SCROLL_ATRR, DATA_TABS, TABS_CLASS, DATA_TABS_LINK, DATA_TABS_CONTENT, ACTIVE, OPEN} = DATA;
 
 // ---------------------------------
 

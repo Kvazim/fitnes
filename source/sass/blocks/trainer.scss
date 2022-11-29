@@ -9,6 +9,7 @@
 
   @include vp-767 {
     padding-top: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -44,7 +45,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -52,30 +53,19 @@
 
 .trainer__wrapper {
   position: relative;
+  height: 294px;
 }
 
 .trainer__list {
-  // display: flex;
-  // column-gap: 40px;
   margin: 0;
   padding: 0;
-
-  // @include vp-1200 {
-  //   column-gap: 30px;
-  // }
 }
 
 .trainer__item {
   display: block;
   position: relative;
-  // max-width: 260px;
   list-style-type: none;
   cursor: pointer;
-
-  // @include vp-1200 {
-  //   max-width: 268px;
-  //   max-height: 294px;
-  // }
 
   @include hover {
     figcaption {
@@ -112,20 +102,7 @@
 
 .trainer__item img {
   width: 100%;
-  // // min-height: 294px;
-  // height: 100%;
   object-fit: cover;
-
-  @include vp-1200 {
-    // width: 268px;
-    // height: 294px;
-  }
-
-  @include vp-767 {
-    // width: 100%;
-    // min-height: 274px;
-    // height: 100%;
-  }
 }
 
 .trainer__item figcaption {
@@ -151,6 +128,10 @@
   background-color: $color-sapphire-opacity-slider;
   color: $color-default-white;
   opacity: 0;
+
+  @include vp-767 {
+    padding: 42px 33px 30px 34px;
+  }
 }
 
 .trainer__item h4 {
@@ -161,6 +142,10 @@
   font-weight: 700;
   line-height: 27px;
   text-align: center;
+
+  @include vp-767 {
+    margin-left: 0;
+  }
 }
 
 .trainer__item p {
@@ -219,6 +204,10 @@
   &--prev {
     left: 0;
 
+    @include vp-1200 {
+      left: 24px;
+    }
+
     @include vp-767 {
       left: 0;
     }
@@ -226,6 +215,10 @@
 
   &--next {
     right: 0;
+
+    @include vp-1200 {
+      right: 24px;
+    }
 
     @include vp-767 {
       right: 0;
