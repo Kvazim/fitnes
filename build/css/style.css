@@ -2690,6 +2690,10 @@ button,
   list-style-type: none;
 }
 
+.stock-item {
+  height: 100%;
+}
+
 .stock-item__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2701,6 +2705,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  height: 100%;
   padding: 35px;
   padding-top: 25px;
   padding-left: 28px;
