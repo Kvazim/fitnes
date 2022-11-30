@@ -3,7 +3,6 @@
   gap: 28px;
   max-width: 560px;
   margin: 0 auto;
-  padding: 0;
   padding: 55px 62px 57px;
   background-color: $color-resolution-blue;
   box-shadow: 0 0 40px 0 $color-resolution-blue-opacity;
@@ -33,33 +32,4 @@
   font-weight: 400;
   line-height: 22px;
   color: $color-default-white;
-}
-
-//---form-wrapper---//
-
-.form-wrapper {
-  height: 100%;
-  padding: 56px 170px 70px 103px;
-  background-color: $color-default-sapphire;
-}
-
-.form-wrapper form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.form-wrapper p {
-  grid-column: 1/-1;
-  margin: 0;
-  padding: 0;
-  font-family: $ff-alumni-sans;
-  font-size: 54px;
-  font-weight: 800;
-  line-height: 84px;
-  letter-spacing: 0.03em;
-  color: $color-default-white;
-}
-
-.form-wrapper button {
-  grid-column: 1/-1;
 }

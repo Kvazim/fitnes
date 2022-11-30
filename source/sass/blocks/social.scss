@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  max-width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__link {
+  @include hover-focus {
+    & .social__icon {
+      transform: scale(1.3);
+      transition: all $trans-600;
+    }
+  }
+
+  @include active {
+    & .social__icon {
+      transform: scale(0.7);
+      transition: all $trans-600;
+    }
+  }
+}
+
+.social__icon {
+  width: 25px;
+  height: 25px;
+}

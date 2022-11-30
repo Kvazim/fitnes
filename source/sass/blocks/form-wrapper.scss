@@ -1,0 +1,101 @@
+.form-wrapper {
+  height: 100%;
+  padding: 56px 170px 70px 103px;
+  background-color: $color-default-sapphire;
+
+  @include vp-1200 {
+    padding: 70px 133px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.form-wrapper form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @include vp-1200 {
+    column-gap: 60px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.form-wrapper p {
+  grid-column: 1/-1;
+  margin: 0;
+  padding: 0;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 84px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  @include vp-1200 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+  }
+}
+
+.form-wrapper input {
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $color-light-slate-grey;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $color-default-white;
+  text-transform: capitalize;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.form-wrapper button {
+  grid-column: 1/-1;
+  padding: 21px;
+  background-color: transparent;
+  border: 3px solid $color-default-white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $color-default-white;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: none;
+  }
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: $color-default-sapphire;
+  }
+}
