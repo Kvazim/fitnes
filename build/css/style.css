@@ -2539,7 +2539,7 @@ button,
   list-style-type: none;
   position: relative;
   padding-left: 20px;
-  padding-bottom: 72px;
+  padding-bottom: 75px;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
@@ -2663,7 +2663,7 @@ button,
 
 .stock__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   padding: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
@@ -2841,7 +2841,10 @@ button,
   align-items: center;
   position: absolute;
   width: 56px;
-  bottom: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -2849,11 +2852,11 @@ button,
 }
 
 .reviews__button--prev {
-  left: 0;
+  left: -18px;
 }
 
 .reviews__button--next {
-  right: 0;
+  right: -18px;
 }
 
 .reviews__button.focus-visible:focus .reviews__icon {
@@ -2926,7 +2929,7 @@ button,
 
 .form-wrapper {
   height: 100%;
-  padding: 56px 170px 70px 103px;
+  padding: 86px 170px 70px 103px;
   background-color: #102654;
 }
 
@@ -2935,17 +2938,17 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 29px;
 }
 
 .form-wrapper p {
   grid-column: 1/-1;
   margin: 0;
+  margin-bottom: 19px;
   padding: 0;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 54px;
   font-weight: 800;
-  line-height: 84px;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -2955,7 +2958,7 @@ button,
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #74819c;
-  padding: 0 10px;
+  padding: 5px 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -2975,7 +2978,8 @@ button,
 
 .form-wrapper button {
   grid-column: 1/-1;
-  padding: 21px;
+  padding: 17px;
+  padding-bottom: 16px;
   background-color: transparent;
   border: 3px solid #ffffff;
   font-size: 14px;
