@@ -5,6 +5,7 @@ const swiper = new Swiper('.trainer__wrapper', {
   direction: 'horizontal',
   loop: false,
   allowTouchMove: true,
+  // autoHeight: true,
   breakpoints: {
     320: {
       slidesPerView: 1,
