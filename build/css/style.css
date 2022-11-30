@@ -2921,6 +2921,35 @@ button,
   color: #ffffff;
 }
 
+.form-wrapper {
+  height: 100%;
+  padding: 56px 170px 70px 103px;
+  background-color: #102654;
+}
+
+.form-wrapper form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-wrapper p {
+  grid-column: 1/-1;
+  margin: 0;
+  padding: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 84px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.form-wrapper button {
+  grid-column: 1/-1;
+}
+
 .footer {
   padding-top: 41px;
   padding-bottom: 32px;

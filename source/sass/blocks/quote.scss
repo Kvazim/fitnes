@@ -32,3 +32,32 @@
   line-height: 22px;
   color: $color-default-white;
 }
+
+//---form-wrapper---//
+
+.form-wrapper {
+  height: 100%;
+  padding: 56px 170px 70px 103px;
+  background-color: $color-default-sapphire;
+}
+
+.form-wrapper form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-wrapper p {
+  grid-column: 1/-1;
+  margin: 0;
+  padding: 0;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 84px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+}
+
+.form-wrapper button {
+  grid-column: 1/-1;
+}
