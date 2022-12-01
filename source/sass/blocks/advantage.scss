@@ -10,7 +10,7 @@
 
   @include vp-767 {
     padding-top: 64px;
-    padding-bottom: 65px;
+    padding-bottom: 61px;
   }
 }
 
@@ -130,6 +130,7 @@
   @include vp-1200 {
     grid-column: 1/-1;
     grid-row: 2/3;
+    margin-top: 32px;
     padding: 14px 135px 38px;
   }
 
@@ -137,7 +138,7 @@
     grid-column: inherit;
     grid-row: inherit;
     width: 100%;
-    margin-top: 22px;
+    margin-top: 18px;
     padding: 19px 0 43px;
   }
 }

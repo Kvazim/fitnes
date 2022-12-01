@@ -2726,6 +2726,10 @@ button,
   line-height: 22px;
 }
 
+.stock-item__subtitle br {
+  display: none;
+}
+
 .stock-item__button {
   -ms-flex-item-align: baseline;
   align-self: baseline;
@@ -2740,6 +2744,7 @@ button,
 
 .stock-item__image {
   width: 100%;
+  min-height: 462px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -2759,7 +2764,7 @@ button,
 .stock__item--promo .stock-item__wrapper {
   padding: 45px;
   padding-top: 33px;
-  padding-bottom: 46px;
+  padding-bottom: 45px;
   border: none;
   background-color: #ed0233;
 }
@@ -2781,6 +2786,7 @@ button,
 }
 
 .stock__item--promo .stock-item__subtitle {
+  margin-bottom: 31px;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -2797,7 +2803,7 @@ button,
 }
 
 .reviews {
-  padding-top: 50px;
+  padding-top: 42px;
   padding-bottom: 120px;
 }
 
@@ -2929,7 +2935,7 @@ button,
 
 .form-wrapper {
   height: 100%;
-  padding: 86px 170px 70px 103px;
+  padding: 86px 170px 62px 103px;
   background-color: #102654;
 }
 
@@ -3003,7 +3009,7 @@ button,
 }
 
 .contacts {
-  padding: 56px 103px 70px 120px;
+  padding: 56px 99px 62px 120px;
   border-top: 1px solid #74819c;
 }
 
@@ -3026,9 +3032,10 @@ button,
   -webkit-column-gap: 120px;
   -moz-column-gap: 120px;
   column-gap: 120px;
-  row-gap: 30px;
+  row-gap: 22px;
   position: relative;
   margin: 0;
+  margin-left: 4px;
   padding: 0;
 }
 
@@ -3047,13 +3054,14 @@ button,
 
 .contact__item {
   margin: 0;
+  margin-top: -6px;
   padding: 0;
   list-style-type: none;
 }
 
 .contact__item h5 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
   padding: 0;
   font-size: 16px;
   font-weight: 700;
@@ -3072,8 +3080,8 @@ button,
 
 .footer {
   position: relative;
-  padding-top: 41px;
-  padding-bottom: 32px;
+  padding-top: 43px;
+  padding-bottom: 26px;
   background-color: #030a1a;
 }
 
@@ -3098,9 +3106,10 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   max-width: 451px;
   margin: 0;
+  margin-left: 10px;
   padding: 0;
 }
 
@@ -3112,7 +3121,7 @@ button,
 
 .footer__link {
   display: block;
-  padding: 10px;
+  padding: 4px 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -3451,7 +3460,7 @@ button,
 
   .trainer {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 91px;
   }
 
   .trainer .container {
@@ -3514,6 +3523,7 @@ button,
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    margin-top: 32px;
     padding: 14px 135px 38px;
   }
 
@@ -3534,7 +3544,7 @@ button,
 
   .stick__title {
     margin-top: 13px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -3550,12 +3560,13 @@ button,
   }
 
   .stock {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 95px;
+    padding-bottom: 50px;
   }
 
   .stock__title {
-    margin-bottom: 50px;
+    margin-bottom: 39px;
+    margin-left: -8px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -3564,9 +3575,33 @@ button,
     gap: 30px;
   }
 
+  .stock-item__wrapper {
+    min-height: 211px;
+  }
+
+  .stock-item__subtitle br {
+    display: block;
+  }
+
   .stock__item--promo {
     grid-column: 1/-1;
     grid-row: inherit;
+  }
+
+  .reviews {
+    padding-bottom: 100px;
+  }
+
+  .reviews__title {
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .quote {
+    max-width: 566px;
+    padding-left: 65px;
+    padding-right: 65px;
   }
 
   .feedback-contacts {
@@ -3575,7 +3610,7 @@ button,
   }
 
   .form-wrapper {
-    padding: 70px 133px;
+    padding: 62px 161px 67px 133px;
   }
 
   .form-wrapper form {
@@ -3585,30 +3620,33 @@ button,
   }
 
   .form-wrapper p {
+    margin-bottom: 5px;
     font-size: 42px;
     font-weight: 700;
     line-height: 50px;
   }
 
   .contacts {
-    padding: 70px 133px;
+    padding: 62px 100px 62px 133px;
     border: none;
   }
 
   .contacts__title {
-    margin-bottom: 50px;
+    margin-bottom: 38px;
     font-size: 42px;
     line-height: 50px;
   }
 
   .contact__list {
-    -webkit-column-gap: 96px;
-    -moz-column-gap: 96px;
-    column-gap: 96px;
-    row-gap: 35px;
+    -webkit-column-gap: 93px;
+    -moz-column-gap: 93px;
+    column-gap: 93px;
+    row-gap: 25px;
+    margin: 0;
   }
 
   .contact__item h5 {
+    margin-bottom: 6px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -3619,9 +3657,19 @@ button,
     line-height: 27px;
   }
 
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 34px;
+  }
+
   .footer__icon {
     width: 82px;
     height: 18px;
+  }
+
+  .footer__list {
+    gap: 30px;
+    margin-left: 15px;
   }
 }
 
@@ -3847,7 +3895,7 @@ button,
 
   .trainer {
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 88px;
   }
 
   .trainer .container {
@@ -3871,14 +3919,15 @@ button,
 
   .trainer__button {
     width: 32px;
+    bottom: 32%;
   }
 
   .trainer__button--prev {
-    left: 0;
+    left: 4px;
   }
 
   .trainer__button--next {
-    right: 0;
+    right: 4px;
   }
 
   .trainer__icon {
@@ -3888,7 +3937,7 @@ button,
 
   .advantage {
     padding-top: 64px;
-    padding-bottom: 65px;
+    padding-bottom: 61px;
   }
 
   .advantage .container {
@@ -3925,7 +3974,7 @@ button,
     grid-column: inherit;
     grid-row: inherit;
     width: 100%;
-    margin-top: 22px;
+    margin-top: 18px;
     padding: 19px 0 43px;
   }
 
@@ -3959,11 +4008,12 @@ button,
   }
 
   .stock {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 64px;
+    padding-bottom: 20px;
   }
 
   .stock__title {
+    margin-bottom: 42px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -3973,8 +4023,21 @@ button,
     grid-template-columns: 1fr;
   }
 
-  .stock-item__subtitle {
-    margin-bottom: 35px;
+  .stock-item__wrapper {
+    padding-top: 37px;
+    padding-left: 36px;
+    padding-bottom: 39px;
+    text-align: center;
+  }
+
+  .stock-item__button {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .stock-item__image {
+    min-height: 299px;
   }
 
   .stock__item--promo .stock-item {
@@ -3982,6 +4045,15 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .stock__item--promo span {
+    margin-bottom: -5px;
+  }
+
+  .reviews__title {
+    font-size: 32px;
+    line-height: 38px;
   }
 
   .reviews__button {
