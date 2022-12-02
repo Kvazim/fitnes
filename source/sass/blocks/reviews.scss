@@ -55,9 +55,11 @@
 
 .reviews__button {
   @include arrow-button;
+  bottom: 43%;
 
   @include vp-767 {
     width: 32px;
+    bottom: 47%;
   }
 
   &--prev {

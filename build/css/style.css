@@ -2469,6 +2469,7 @@ button,
   border: none;
   cursor: pointer;
   background-color: transparent;
+  z-index: 10;
 }
 
 .trainer__button--prev {
@@ -2867,6 +2868,8 @@ button,
   border: none;
   cursor: pointer;
   background-color: transparent;
+  z-index: 10;
+  bottom: 43%;
 }
 
 .reviews__button--prev {
@@ -4147,6 +4150,7 @@ button,
 
   .reviews__button {
     width: 32px;
+    bottom: 47%;
   }
 
   .reviews__button--prev {
