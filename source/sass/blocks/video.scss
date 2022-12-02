@@ -19,6 +19,9 @@
 }
 
 .video__link {
+  display: block;
+  width: 100%;
+
   &::before {
     content: "";
     position: absolute;

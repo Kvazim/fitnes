@@ -1,5 +1,4 @@
 .footer {
-  position: relative;
   padding-top: 43px;
   padding-bottom: 26px;
   background-color: $color-black-russian;
@@ -8,26 +7,46 @@
     padding-top: 48px;
     padding-bottom: 34px;
   }
+
+  @include vp-767 {
+    padding-top: 44px;
+    padding-bottom: 45px;
+  }
 }
 
 .footer__navigation {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 90px 1fr 1.2fr 100px;
+  column-gap: 35px;
+
+  @include vp-1200 {
+    column-gap: 9px;
+  }
 
   @include vp-767 {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 18px;
   }
 }
 
 .footer__logo {
+  display: block;
+  margin-right: auto;
+
+  @include vp-1200 {
+    margin-right: 62px;
+  }
+
   @include vp-767 {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin: 0;
+    margin-top: 7px;
   }
 }
 
 .footer__icon {
+  display: block;
   width: 88px;
   height: 32px;
   fill: $color-default-white;
@@ -49,17 +68,16 @@
   gap: 40px;
   max-width: 451px;
   margin: 0;
-  margin-left: 10px;
   padding: 0;
 
   @include vp-1200 {
     gap: 30px;
-    margin-left: 15px;
   }
 
   @include vp-767 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    align-items: baseline;
+    gap: 13px;
   }
 }
 
@@ -87,6 +105,28 @@
   }
 }
 
-.footer__item--first {
-  grid-column: 2/3;
+.footer__list--handling {
+  justify-self: end;
+
+  @include vp-1200 {
+    margin: 0;
+    margin-right: 22px;
+  }
+
+  @include vp-767 {
+    justify-self: flex-start;
+  }
+}
+
+.footer__list--lessons {
+  margin-left: 5px;
+
+  @include vp-1200 {
+    margin: 0;
+  }
+
+  @include vp-767 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
 }

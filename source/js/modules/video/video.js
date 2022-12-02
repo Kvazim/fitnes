@@ -1,5 +1,4 @@
 const createVideo = (container, link) => {
-  // const {DATA_CONTAINER, VIDEO_URL} = DATA;
   const video = document.querySelector(container);
 
   const onClickPlayVideo = () => {

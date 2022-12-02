@@ -1,11 +1,12 @@
 /* global Swiper */
 /* eslint no-undef: "error" */
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "[iI]gnored" }] */
 
-const swiper = new Swiper('.trainer__wrapper', {
+const swiperIgnored = new Swiper('.trainer__wrapper', {
   direction: 'horizontal',
   loop: false,
   allowTouchMove: true,
-  // autoHeight: true,
+  autoHeight: true,
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -26,7 +27,7 @@ const swiper = new Swiper('.trainer__wrapper', {
   },
 });
 
-const reviews = new Swiper('.reviews__wrapper', {
+const reviewsIgnored = new Swiper('.reviews__wrapper', {
   direction: 'horizontal',
   loop: false,
   allowTouchMove: true,

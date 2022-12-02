@@ -19,8 +19,6 @@
   <link rel="manifest" href="./img/favicon/manifest.webmanifest" crossorigin="use-credentials">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="./fonts/alumnisans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/alumnisans-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/alumnisans-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/robotocondensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/robotocondensed-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -592,17 +590,19 @@
                   <div class="stock-item__content">
                     <h4 class="stock-item__title">Год</h4>
                     <span>4999</span>
-                    <p class="stock-item__subtitle">Безлимитный абонемент<br>в тренажерный зал</p>
+                    <p class="stock-item__subtitle">Безлимитный абонемент<br> в тренажерный зал</p>
                   </div>
                   <a class="stock-item__button" href="#">подробнее</a>
                 </div>
-                <picture>
-                  <source type="image/webp"
-                    srcset="./img/contents/sports-girl.webp 1x, ./img/contents/sports-girl@2x.webp 2x">
-                  <img class="stock-item__image" src="./img/contents/sports-girl.jpg"
-                    srcset="./img/contents/sports-girl@2x.jpg 2x" width="280" height="462" alt="фотография тренера."
-                    loading="lazy">
-                </picture>
+                <div class="stock-item__image-wrapper">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/contents/sports-girl.webp 1x, ./img/contents/sports-girl@2x.webp 2x">
+                    <img class="stock-item__image" src="./img/contents/sports-girl.jpg"
+                      srcset="./img/contents/sports-girl@2x.jpg 2x" width="280" height="462" alt="фотография тренера."
+                      loading="lazy">
+                  </picture>
+                </div>
               </article>
             </li>
             <li class="stock__item">
@@ -610,7 +610,7 @@
                 <div class="stock-item__wrapper">
                   <div class="stock-item__content">
                     <h4 class="stock-item__title">Месяц бесплатно</h4>
-                    <p class="stock-item__subtitle">Приведи друга, получи<br>абонемент в подарок</p>
+                    <p class="stock-item__subtitle">Приведи друга, получи<br> абонемент в подарок</p>
                   </div>
                   <a class="stock-item__button" href="#">подробнее</a>
                 </div>
@@ -644,11 +644,9 @@
                       srcset="./img/contents/account-girl@2x.jpg 2x" width="80" height="80"
                       alt="фотография владельца аккаунта отзыва." loading="lazy">
                   </picture>
-                  <div>
-                    <cite class="quote__author">Анна Орлова</cite>
-                    <p class="quote__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
-                      тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  </div>
+                  <cite class="quote__author">Анна Орлова</cite>
+                  <p class="quote__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
+                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </blockquote>
               </li>
               <li class="swiper-slide reviews__item">
@@ -660,11 +658,9 @@
                       srcset="./img/contents/account-girl@2x.jpg 2x" width="80" height="80"
                       alt="фотография владельца аккаунта отзыва." loading="lazy">
                   </picture>
-                  <div>
-                    <cite class="quote__author">Анна Орлова</cite>
-                    <p class="quote__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
-                      тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  </div>
+                  <cite class="quote__author">Анна Орлова</cite>
+                  <p class="quote__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
+                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </blockquote>
               </li>
               <li class="swiper-slide reviews__item">
@@ -676,11 +672,9 @@
                       srcset="./img/contents/account-girl@2x.jpg 2x" width="80" height="80"
                       alt="фотография владельца аккаунта отзыва." loading="lazy">
                   </picture>
-                  <div>
-                    <cite class="quote__author">Анна Орлова</cite>
-                    <p class="quote__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
-                      тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  </div>
+                  <cite class="quote__author">Анна Орлова</cite>
+                  <p class="quote__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
+                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </blockquote>
               </li>
               <li class="swiper-slide reviews__item">
@@ -692,11 +686,9 @@
                       srcset="./img/contents/account-girl@2x.jpg 2x" width="80" height="80"
                       alt="фотография владельца аккаунта отзыва." loading="lazy">
                   </picture>
-                  <div>
-                    <cite class="quote__author">Анна Орлова</cite>
-                    <p class="quote__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
-                      тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                  </div>
+                  <cite class="quote__author">Анна Орлова</cite>
+                  <p class="quote__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто,
+                    тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </blockquote>
               </li>
             </ul>
@@ -735,20 +727,20 @@
         <section class="contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
           <h3 class="contacts__title">Контакты</h3>
-          <ul class="contact__list">
-            <li class="contact__item">
+          <ul class="contacts__list">
+            <li class="contacts__item">
               <h5>Адрес:</h5>
               <p>г. Омск, ул. 60 лет Октября, 7</p>
             </li>
-            <li class="contact__item contact__item--phone">
+            <li class="contacts__item contacts__item--phone">
               <h5>Телефон:</h5>
               <a href="tel:+78005555555">8-800-555-55-55</a>
             </li>
-            <li class="contact__item">
+            <li class="contacts__item">
               <h5>График работы:</h5>
               <p>Пн-Вс: с 8:00 до 22:00</p>
             </li>
-            <li class="contact__item">
+            <li class="contacts__item">
               <h5>Email:</h5>
               <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
             </li>
@@ -765,13 +757,15 @@
               <use xlink:href="./img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <ul class="footer__list">
-            <li class="footer__item footer__item--first">
+          <ul class="footer__list footer__list--handling">
+            <li class="footer__item">
               <a class="footer__link" href="#">Услуги</a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#">Абонементы</a>
             </li>
+          </ul>
+          <ul class="footer__list footer__list--lessons">
             <li class="footer__item">
               <a class="footer__link" href="#">Акции</a>
             </li>

@@ -30,12 +30,13 @@
   }
 
   @include vp-767 {
+    margin-bottom: 42px;
     font-size: 32px;
     line-height: 38px;
   }
 }
 
-.contact__list {
+.contacts__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 120px;
@@ -56,7 +57,7 @@
   }
 }
 
-.contact__list::after {
+.contacts__list::after {
   content: "";
   position: absolute;
   display: block;
@@ -71,14 +72,14 @@
   }
 }
 
-.contact__item {
+.contacts__item {
   margin: 0;
   margin-top: -6px;
   padding: 0;
   list-style-type: none;
 }
 
-.contact__item h5 {
+.contacts__item h5 {
   margin: 0;
   margin-bottom: 2px;
   padding: 0;
@@ -93,8 +94,8 @@
   }
 }
 
-.contact__item p,
-.contact__item a {
+.contacts__item p,
+.contacts__item a {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -108,7 +109,7 @@
   }
 }
 
-.contact__item--phone {
+.contacts__item--phone {
   @include vp-767 {
     grid-row: 3/4;
   }

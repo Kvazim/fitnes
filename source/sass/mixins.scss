@@ -80,6 +80,18 @@
   }
 }
 
+@mixin arrow-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 56px;
+  bottom: 32%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
 // Mobile first
 
 // @mixin vp-375 {

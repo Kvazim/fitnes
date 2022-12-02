@@ -4,12 +4,12 @@
 
   @include vp-1200 {
     padding-top: 50px;
-    padding-bottom: 91px;
+    padding-bottom: 100px;
   }
 
   @include vp-767 {
     padding-top: 30px;
-    padding-bottom: 88px;
+    padding-bottom: 70px;
   }
 }
 
@@ -17,8 +17,8 @@
   position: relative;
 
   @include vp-1200 {
-    padding-left: 101px;
-    padding-right: 101px;
+    padding-left: 109px;
+    padding-right: 109px;
   }
 
   @include vp-767 {
@@ -102,6 +102,10 @@
 .trainer__item img {
   width: 100%;
   object-fit: cover;
+
+  @include vp-767 {
+    min-height: 274px;
+  }
 }
 
 .trainer__item figcaption {
@@ -184,24 +188,14 @@
 }
 
 .trainer__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 56px;
-  bottom: 32%;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  z-index: 10;
+  @include arrow-button;
 
   @include vp-1200 {
-    bottom: 36%;
+    bottom: 35%;
   }
 
   @include vp-767 {
     width: 32px;
-    bottom: 32%;
   }
 
   &--prev {
