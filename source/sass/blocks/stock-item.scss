@@ -1,12 +1,9 @@
-.stock-item {
-  height: 100%;
-}
-
 .stock-item__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  flex-grow: 1;
+  min-height: 211px;
   padding: 25px 35px 28px 28px;
   border: 7px solid transparent;
   border-image-slice: 1;
@@ -40,10 +37,18 @@
   line-height: 22px;
 }
 
-.stock-item__subtitle br {
+.stock-item__subtitle--free br {
   display: none;
 
   @include vp-1200 {
+    display: block;
+  }
+}
+
+.stock-item__subtitle--discount br {
+  display: none;
+
+  @include vp-767 {
     display: block;
   }
 }
@@ -63,17 +68,13 @@
   }
 }
 
-.stock-item__image-wrapper {
-  flex-grow: 1;
-}
-
 .stock-item__image {
   width: 100%;
   min-height: 462px;
   object-fit: cover;
 
   @include vp-767 {
-    min-height: 299px;
+    min-height: auto;
     height: 299px;
     object-position: top center;
   }

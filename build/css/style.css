@@ -2524,14 +2524,15 @@ button,
 .advantage__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 240px 1fr;
-  grid-template-columns: 1fr 240px 1fr;
-  -webkit-column-gap: 60px;
-  -moz-column-gap: 60px;
-  column-gap: 60px;
-  margin: 0;
-  padding-left: 60px;
-  padding-right: 60px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 34%;
+  -moz-column-gap: 34%;
+  column-gap: 34%;
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .advantage__item {
@@ -2555,7 +2556,7 @@ button,
 }
 
 .advantage__item--pad {
-  padding-left: 0;
+  padding-left: 4px;
 }
 
 .advantage__item:nth-child(-n+1) .stick__caption {
@@ -2567,17 +2568,17 @@ button,
 }
 
 .advantage__item--vip {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
+  position: absolute;
+  -ms-flex-item-align: baseline;
   align-self: baseline;
   -ms-grid-column-align: center;
   justify-self: center;
   display: block;
-  margin-top: 30px;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   padding: 35px 34px 58px;
   text-align: center;
   border: none;
@@ -2693,10 +2694,6 @@ button,
   list-style-type: none;
 }
 
-.stock-item {
-  height: 100%;
-}
-
 .stock-item__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2708,7 +2705,10 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-height: 211px;
   padding: 25px 35px 28px 28px;
   border: 7px solid transparent;
   border-image-slice: 1;
@@ -2731,7 +2731,11 @@ button,
   line-height: 22px;
 }
 
-.stock-item__subtitle br {
+.stock-item__subtitle--free br {
+  display: none;
+}
+
+.stock-item__subtitle--discount br {
   display: none;
 }
 
@@ -2745,12 +2749,6 @@ button,
   letter-spacing: 0.05em;
   color: #1c3374;
   text-transform: uppercase;
-}
-
-.stock-item__image-wrapper {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .stock-item__image {
@@ -3213,6 +3211,22 @@ button,
   list-style-type: none;
 }
 
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
 .social__link.focus-visible:focus .social__icon {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
@@ -3232,8 +3246,7 @@ button,
 }
 
 .social__icon {
-  width: 25px;
-  height: 25px;
+  fill: #030a1a;
 }
 
 /* @mixin hover-focus {
@@ -3576,6 +3589,12 @@ button,
   }
 
   .advantage__item--vip {
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
     grid-column: 1/-1;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -3586,6 +3605,7 @@ button,
 
   .advantage__item--vip .stick__caption {
     margin-bottom: -19px;
+    margin-left: -6px;
   }
 
   .advantage__item--vip .stick__title {
@@ -3636,7 +3656,7 @@ button,
     min-height: 211px;
   }
 
-  .stock-item__subtitle br {
+  .stock-item__subtitle--free br {
     display: block;
   }
 
@@ -3751,6 +3771,11 @@ button,
 
   .footer__list--lessons {
     margin: 0;
+  }
+
+  .social {
+    margin-top: -2px;
+    margin-right: -6px;
   }
 }
 
@@ -4064,6 +4089,7 @@ button,
 
   .advantage__item--vip .stick__caption {
     margin-bottom: -24px;
+    margin-left: -4px;
   }
 
   .advantage__item--vip .stick__title {
@@ -4114,6 +4140,10 @@ button,
     text-align: center;
   }
 
+  .stock-item__subtitle--discount br {
+    display: block;
+  }
+
   .stock-item__button {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -4121,7 +4151,7 @@ button,
   }
 
   .stock-item__image {
-    min-height: 299px;
+    min-height: auto;
     height: 299px;
     -o-object-position: top center;
     object-position: top center;
