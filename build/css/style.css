@@ -2916,7 +2916,7 @@ button,
   box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 }
 
-.quote picture {
+.quote__image-wrapper {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
@@ -4180,7 +4180,7 @@ button,
     row-gap: 12px;
   }
 
-  .quote picture {
+  .quote__image-wrapper {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
