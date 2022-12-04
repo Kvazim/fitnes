@@ -4151,10 +4151,10 @@ button,
   }
 
   .stock-item__image {
-    min-height: auto;
-    height: 299px;
+    min-height: 299px;
     -o-object-position: top center;
     object-position: top center;
+    aspect-ratio: 1/1;
   }
 
   .stock__item--promo .stock-item {

@@ -74,9 +74,9 @@
   object-fit: cover;
 
   @include vp-767 {
-    min-height: auto;
-    height: 299px;
+    min-height: 299px;
     object-position: top center;
+    aspect-ratio: 1/1;
   }
 }
 
