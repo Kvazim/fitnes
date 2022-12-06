@@ -4,8 +4,6 @@
   "description": "Фитнес центр SUPERGYM Омск.",
   "background_color": "#B80027",
   "theme_color": "#B80027",
-  "display": "standalone",
-  "orientation": "portrait",
   "icons": [
     {
       "src": "\/android-icon-36x36.png",
