@@ -3534,8 +3534,8 @@ button,
   }
 
   .trainer .container {
-    padding-left: 109px;
-    padding-right: 109px;
+    padding-left: 101px;
+    padding-right: 101px;
   }
 
   .trainer__title {
@@ -3543,6 +3543,11 @@ button,
     font-size: 42px;
     line-height: 50px;
     text-align: center;
+  }
+
+  .trainer__item img {
+    min-height: 294px;
+    aspect-ratio: 1/1;
   }
 
   .trainer__button {
