@@ -1999,11 +1999,14 @@ button,
 
 .subscription__image {
   display: block;
-  width: 466px;
-  height: 494px;
+  width: 321px;
+  height: 384px;
   position: absolute;
-  bottom: -270px;
-  right: -180px;
+  bottom: -215px;
+  right: -108px;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
 .tabs {
@@ -3442,10 +3445,10 @@ button,
   }
 
   .subscription__image {
-    width: 423px;
-    height: 443px;
-    bottom: -224px;
-    right: -76px;
+    width: 289px;
+    height: 345px;
+    bottom: -176px;
+    right: -10px;
   }
 
   .tabs {
