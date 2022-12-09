@@ -1,6 +1,8 @@
-.feedback-contacts {
+.feedback-contacts .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-left: 0;
+  padding-right: 0;
 
   @include vp-1200 {
     grid-template-columns: 1fr;

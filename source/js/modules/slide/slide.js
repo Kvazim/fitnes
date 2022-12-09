@@ -4,7 +4,7 @@
 
 const swiperIgnored = new Swiper('.trainer__wrapper', {
   direction: 'horizontal',
-  loop: false,
+  loop: true,
   allowTouchMove: true,
   autoHeight: true,
   breakpoints: {

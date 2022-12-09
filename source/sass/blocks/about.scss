@@ -120,15 +120,13 @@
 }
 
 .about__img {
-  max-width: 660px;
   width: 100%;
   object-fit: contain;
 
   @include vp-1200 {
-    margin: 0 auto;
-    min-width: 678px;
     height: 345px;
     object-fit: cover;
+    object-view-box: inset(0 0 37px 80px);
   }
 
   @include vp-767 {

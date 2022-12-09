@@ -66,7 +66,7 @@
   list-style-type: none;
   cursor: pointer;
 
-  @include hover {
+  @include hover-focus {
     figcaption {
       display: none;
     }
@@ -78,16 +78,6 @@
     img {
       box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
       transform: matrix(-1, 0, 0, 1, 0, 0);
-    }
-  }
-
-  &:focus-within {
-    figcaption {
-      display: none;
-    }
-
-    div {
-      opacity: 1;
     }
   }
 }
@@ -132,10 +122,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 52px 45px 51px 55px;
+  padding: 52px 45px 35px 55px;
   background-color: $color-sapphire-opacity-slider;
   color: $color-default-white;
   opacity: 0;
+  overflow-y: auto;
 
   @include vp-767 {
     padding: 42px 33px 30px 34px;

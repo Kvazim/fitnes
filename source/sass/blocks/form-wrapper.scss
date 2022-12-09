@@ -1,6 +1,6 @@
 .form-wrapper {
   height: 100%;
-  padding: 80px 170px 62px 103px;
+  padding: 80px 85px 62px 103px;
   background-color: $color-default-sapphire;
 
   @include vp-1200 {
@@ -19,9 +19,11 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 24px;
   column-gap: 31px;
+  width: 410px;
 
   @include vp-1200 {
     column-gap: 60px;
+    width: 100%;
   }
 
   @include vp-767 {

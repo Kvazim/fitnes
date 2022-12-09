@@ -1,3 +1,7 @@
+.stock-item {
+  min-height: 100%;
+}
+
 .stock-item__wrapper {
   display: flex;
   flex-direction: column;
@@ -54,6 +58,7 @@
 }
 
 .stock-item__button {
+  margin-top: 20px;
   align-self: baseline;
   border-bottom: 1px solid $color-resolution-blue;
   font-size: 12px;
@@ -70,7 +75,7 @@
 
 .stock-item__image {
   width: 100%;
-  min-height: 462px;
+  min-height: 100%;
   object-fit: cover;
 
   @include vp-767 {
@@ -143,6 +148,7 @@
 }
 
 .stock__item--promo .stock-item__button {
+  margin: 0;
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
