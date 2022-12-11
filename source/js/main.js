@@ -4,6 +4,7 @@ import {createVideo} from './modules/video/video';
 import {twistUp} from './modules/smooth-scroll/smooth-scroll';
 import {changeTabs} from './modules/tabs/tabs';
 import './modules/slide/slide';
+import {removeTabIndex} from './modules/tabindex/tabindex';
 
 const DATA = {
   DATA_CONTAINER: '[data-video]',
@@ -15,11 +16,12 @@ const DATA = {
   DATA_TABS_CONTENT: '[data-tabs-content]',
   ACTIVE: 'is-active',
   OPEN: 'is-open',
+  DUPLICATE: '.swiper-slide-duplicate',
 };
 
 //
 
-const {DATA_CONTAINER, VIDEO_URL, SCROLL_ATRR, DATA_TABS, TABS_CLASS, DATA_TABS_LINK, DATA_TABS_CONTENT, ACTIVE, OPEN} = DATA;
+const {DATA_CONTAINER, VIDEO_URL, SCROLL_ATRR, DATA_TABS, TABS_CLASS, DATA_TABS_LINK, DATA_TABS_CONTENT, ACTIVE, OPEN, DUPLICATE} = DATA;
 
 // ---------------------------------
 
@@ -35,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
   twistUp(SCROLL_ATRR);
   createVideo(DATA_CONTAINER, VIDEO_URL);
   changeTabs(DATA_TABS, DATA_TABS_LINK, TABS_CLASS, DATA_TABS_CONTENT, ACTIVE, OPEN);
+  removeTabIndex(DUPLICATE);
 
   // ---------------------------------
 
