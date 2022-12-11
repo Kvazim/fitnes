@@ -2887,15 +2887,15 @@ button,
   cursor: pointer;
   background-color: transparent;
   z-index: 10;
-  bottom: 31.5%;
+  bottom: 30.5%;
 }
 
 .reviews__button--prev {
-  right: 72%;
+  left: 24%;
 }
 
 .reviews__button--next {
-  left: 72%;
+  right: 24%;
 }
 
 .reviews__button.focus-visible:focus .reviews__icon {
@@ -3714,6 +3714,10 @@ button,
     margin-bottom: 40px;
     font-size: 42px;
     line-height: 50px;
+  }
+
+  .reviews__button {
+    bottom: 31.5%;
   }
 
   .reviews__button--prev {
