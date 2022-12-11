@@ -31,6 +31,7 @@ const reviewsIgnored = new Swiper('.reviews__wrapper', {
   direction: 'horizontal',
   loop: false,
   allowTouchMove: true,
+  autoHeight: true,
   navigation: {
     nextEl: '.reviews__button--next',
     prevEl: '.reviews__button--prev',

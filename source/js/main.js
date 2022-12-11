@@ -16,7 +16,7 @@ const DATA = {
   DATA_TABS_CONTENT: '[data-tabs-content]',
   ACTIVE: 'is-active',
   OPEN: 'is-open',
-  DUPLICATE: '.swiper-slide-duplicate',
+  DUPLICATE: 'swiper-slide-duplicate',
 };
 
 //

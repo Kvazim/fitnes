@@ -1,10 +1,10 @@
 const removeTabIndex = (items) => {
-    console.log(items);
-    if (items.test(/\./)) {
-        console.log('ku');
+    const regex = new RegExp(/\./);
+    if (regex.test(items)) {
+        document.querySelectorAll(items).forEach((item) => item.removeAttribute('tabindex'));
+    } else {
+        document.querySelectorAll(items.replace('', '.')).forEach((item) => item.removeAttribute('tabindex'));
     }
-    console.log(document.querySelectorAll(items || items.replace('', '.')));
-    document.querySelectorAll(items).forEach((item) => item.removeAttribute('tabindex'));
 }
 
 export {removeTabIndex};
