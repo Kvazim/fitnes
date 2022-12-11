@@ -112,16 +112,16 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 52px 45px 35px 55px;
+  width: 100%;
+  height: 100%;
+  padding: 52px 45px 38px 55px;
   background-color: $color-sapphire-opacity-slider;
   color: $color-default-white;
   opacity: 0;
   overflow-y: auto;
 
   @include vp-767 {
-    padding: 42px 33px 30px 34px;
+    padding: 42px 33px 28px 34px;
   }
 }
 

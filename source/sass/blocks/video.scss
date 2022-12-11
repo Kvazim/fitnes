@@ -5,7 +5,7 @@
   left: -9.5%;
 
   @include vp-1200 {
-    bottom: -24%;
+    bottom: -17.5%;
     left: 30.4%;
     right: 30.4%;
   }
@@ -22,6 +22,7 @@
 .video__link {
   display: block;
   width: 100%;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -38,14 +39,21 @@
 
 .video__img {
   object-fit: cover;
+  aspect-ratio: 364/228;
+  max-height: 228px;
+  transform: scale(1.07);
+  object-position: 11px -18px;
 
   @include vp-1200 {
+    aspect-ratio: 266/167;
+    object-position: 9px -12px;
     width: 100%;
   }
 
   @include vp-767 {
-    height: 167px;
-    min-height: auto;
+    aspect-ratio: 320/167;
+    transform: scale(1);
+    object-position: 0px -5px;
   }
 }
 
