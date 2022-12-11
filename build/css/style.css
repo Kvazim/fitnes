@@ -2362,6 +2362,22 @@ button,
   cursor: pointer;
 }
 
+.trainer__item:hover figcaption {
+  display: none;
+}
+
+.trainer__item:hover div {
+  opacity: 1;
+}
+
+.trainer__item:hover img {
+  -webkit-box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
+  box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .trainer__item.focus-visible:focus figcaption {
   display: none;
 }
@@ -3306,10 +3322,6 @@ button,
 */
 
 @media (min-width: 1200px) {
-  .reviews__wrapper {
-    max-width: 678px;
-  }
-
   .quote {
     max-width: 560px;
   }
@@ -3571,8 +3583,7 @@ button,
   }
 
   .trainer__item img {
-    min-height: 294px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 268/294;
   }
 
   .trainer__button {
@@ -4054,7 +4065,7 @@ button,
   }
 
   .trainer__item img {
-    min-height: 274px;
+    aspect-ratio: 226/274;
   }
 
   .trainer__item div {
@@ -4429,22 +4440,6 @@ button,
     background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     color: #ffffff;
-  }
-
-  .trainer__item:hover:not(.focus-visible) figcaption {
-    display: none;
-  }
-
-  .trainer__item:hover:not(.focus-visible) div {
-    opacity: 1;
-  }
-
-  .trainer__item:hover:not(.focus-visible) img {
-    -webkit-box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
-    box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
-    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
-    -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 
   .trainer__button:hover:not(.focus-visible) .trainer__icon {
