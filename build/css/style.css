@@ -2513,11 +2513,11 @@ button,
   align-items: center;
   position: absolute;
   width: 56px;
-  bottom: 32%;
   border: none;
   cursor: pointer;
   background-color: transparent;
   z-index: 10;
+  bottom: 32%;
 }
 
 .trainer__button--prev {
@@ -2884,6 +2884,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 300px;
 }
 
 .reviews__title {
@@ -2920,7 +2921,6 @@ button,
   align-items: center;
   position: absolute;
   width: 56px;
-  bottom: 32%;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -3747,6 +3747,7 @@ button,
   }
 
   .reviews__wrapper {
+    margin: 0;
     margin-left: 56px;
     margin-right: 56px;
   }

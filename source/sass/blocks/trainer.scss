@@ -177,6 +177,7 @@
 
 .trainer__button {
   @include arrow-button;
+  bottom: 32%;
 
   @include vp-1200 {
     bottom: 35%;
