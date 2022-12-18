@@ -1855,6 +1855,9 @@ button,
   -ms-grid-columns: 415px 1fr;
   grid-template-columns: 415px 1fr;
   gap: 85px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .about__description {
@@ -2922,7 +2925,8 @@ button,
   cursor: pointer;
   background-color: transparent;
   z-index: 10;
-  bottom: 30.5%;
+  height: 56px;
+  top: 194px;
 }
 
 .reviews__button--prev {
@@ -3755,7 +3759,7 @@ button,
   }
 
   .reviews__button {
-    bottom: 31.5%;
+    top: 183px;
   }
 
   .reviews__button--prev {
@@ -4271,7 +4275,8 @@ button,
 
   .reviews__button {
     width: 32px;
-    bottom: 38%;
+    height: 32px;
+    top: 233px;
   }
 
   .reviews__button--prev {

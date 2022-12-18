@@ -17,6 +17,7 @@
   display: grid;
   grid-template-columns: 415px 1fr;
   gap: 85px;
+  align-items: flex-start;
 
   @include vp-1200 {
     grid-template-columns: 1fr;

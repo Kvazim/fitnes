@@ -68,15 +68,17 @@
 
 .reviews__button {
   @include arrow-button;
-  bottom: 30.5%;
+  height: 56px;
+  top: 194px;
 
   @include vp-1200 {
-    bottom: 31.5%;
+    top: 183px;
   }
 
   @include vp-767 {
     width: 32px;
-    bottom: 38%;
+    height: 32px;
+    top: 233px;
   }
 
   &--prev {
